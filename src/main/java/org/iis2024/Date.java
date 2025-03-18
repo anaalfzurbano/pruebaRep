@@ -1,3 +1,4 @@
+
 package org.iis2024;
 
 import java.text.ParseException;
@@ -20,6 +21,10 @@ public class Date {
   private final int month;
   private final int year;
 
+
+public boolean isLeapYear() {
+    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+}
   /**
    * Retrieves the day component of this date.
    *
